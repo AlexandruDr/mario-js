@@ -1,7 +1,5 @@
 
 printPyramid(8);
-
-
 /*
  * printPyramid
  *
