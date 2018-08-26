@@ -1,5 +1,5 @@
 
-printPyramid(8);
+
 /*
  * printPyramid
  *
@@ -11,6 +11,10 @@ printPyramid(8);
  *       #####
  *      ######
  */
+
+printPyramid(5);
+drawPyramid(5);
+
 function printPyramid(height) {
  
     var string = '#';
@@ -36,3 +40,31 @@ function printPyramid(height) {
     }
 
 
+    
+    
+
+function drawPyramid(height) {
+ 
+        var string = '#';
+        var divCaught = document.getElementById("pyramid");
+
+       for ( var i = 0; i < height; i++)
+            {   var spaces = '';
+                for (j = i; j < height -1; j++)
+                    {
+                        
+                        spaces += " ";
+                    }
+                
+                if (i != height)
+    
+                string += "#";
+                
+                //console.log(spaces + string);
+                divCaught.textContent = (spaces + string);
+
+                spaces = ''
+            }
+            
+        
+        }
